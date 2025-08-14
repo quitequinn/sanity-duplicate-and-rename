@@ -1,0 +1,58 @@
+{
+  "name": "sanity-duplicate-and-rename",
+  "version": "1.0.0",
+  "description": "Duplicate and rename documents in Sanity Studio with batch processing and customizable naming patterns",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "npm run build",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "sanity",
+    "sanity-studio",
+    "sanity-plugin",
+    "duplicate",
+    "rename",
+    "batch-processing",
+    "content-management",
+    "cms",
+    "utility",
+    "developer-tools"
+  ],
+  "author": "Quinn Keaveney <quinn@liiift.studio>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quitequinn/sanity-duplicate-and-rename.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quitequinn/sanity-duplicate-and-rename/issues"
+  },
+  "homepage": "https://github.com/quitequinn/sanity-duplicate-and-rename#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "sanity": "^3.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.0",
+    "eslint": "^8.0.0",
+    "rollup": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@sanity/icons": "^3.0.0",
+    "@sanity/ui": "^2.0.0"
+  }
+}
